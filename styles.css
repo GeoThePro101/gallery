@@ -1,0 +1,39 @@
+body{
+    background: black;
+}
+
+h1{
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px red;
+}
+
+.container{
+    width: 80%;
+    height: 40%;
+    background: rgb(143, 42, 42);
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.container img{
+    height: 300px;
+    width: 250px;
+    transition: 0.4s ease;
+}
+
+.container img:hover{
+    transform: scale(1.2);
+}
+
+.container:hover > :not(:hover){
+    filter: blur(8px);
+}
